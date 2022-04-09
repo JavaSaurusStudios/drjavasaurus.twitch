@@ -1,16 +1,38 @@
+const achievement_names = [
+
+    'Default',
+    'Default',
+    'Default',
+    'Default',
+    'Default',
+    'Default'
+
+];
+
 const jsonBaseURL = 'https://javasaurusstudios.github.io/viewers/profiles/';
 
 var body = document.getElementById("achievement-body");
 body.onload = function () { loadAchievements() };
+
+var badges = document.getElementById("badges");
+achievement_names.forEach(addAchievement);
 
 function loadAchievements() {
     const urlParams = new URLSearchParams(window.location.search);
     var userName = urlParams.get('username');
 
     var title = document.getElementById("Title");
-    title.innerHTML = userName + " 's Stream Achievements";
+    title.innerHTML = userName;
 
     loadProfileJson(userName);
+}
+
+function addAchievement(achievementName) {
+
+    var newDiv = document.createElement("div");
+    newDiv.className = "achievement-container tooltip";
+    newDiv.innerHTML = '<img id="' + achievementName + '" src="badges/' + achievementName + '.png" alt="' + achievementName + '" class="achievement locked"> <span class="tooltiptext">' + achievementName + '</span>';
+    badges.appendChild(newDiv);
 }
 
 function loadProfileJson(userName) {
@@ -38,5 +60,7 @@ function parseUserData(data) {
 function unlockAchievement(achievement) {
     console.log(achievement);
     var achievementBadge = document.getElementById(achievement);
-    achievementBadge.className = "achievement";
+    if (achievementBadge) {
+        achievementBadge.className = "achievement";
+    }
 }
