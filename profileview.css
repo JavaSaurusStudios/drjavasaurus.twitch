@@ -35,7 +35,7 @@ body {
 
 
 .achievement-container {
-    min-width: 128px;
+    min-width: 64px;
     width: 5%;
     height: auto;
     float: left;
@@ -43,7 +43,7 @@ body {
 }
 
 .achievement {
-    min-width: 128px;
+    min-width: 64px;
     width: 100%;
     height: auto;
 }
