@@ -1,5 +1,5 @@
 const achievement_names = [
-    'Default',
+    'First',
     'Default',
     'Default',
     'Default',
