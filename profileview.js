@@ -1,10 +1,6 @@
 const achievement_names = [
     'First',
     'Default',
-    'Default',
-    'Default',
-    'Default',
-    'Default'
 ];
 
 const jsonBaseURL = 'https://javasaurusstudios.github.io/viewers/profiles/';
