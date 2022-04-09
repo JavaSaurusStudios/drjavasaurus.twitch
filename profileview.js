@@ -1,4 +1,4 @@
-const jsonBaseURL = 'https://raw.githubusercontent.com/JavaSaurusStudios/viewers/main/profiles/';
+const jsonBaseURL = 'https://javasaurusstudios.github.io/viewers/profiles/';
 
 var body = document.getElementById("achievement-body");
 body.onload = function () { loadAchievements() };
