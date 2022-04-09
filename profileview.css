@@ -1,56 +1,93 @@
-body{
-    background: #003b97;
+@import url('http://fonts.cdnfonts.com/css/press-start-2p');
+
+body {
+    color:aliceblue;
+    background-color: #5776ab;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-size:100%;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
-.title{
-    width:100%;
+.title {    
+    font-size:300%;
+    width: 100%;
     text-align: center;
-    font-size: 48px;
 }
 
-.badges{
+.intro {
+    font-size:110%;
+    width: 100%;
+    text-align: center;
+}
+
+.badges {
     width: 100%;
     margin: 0 auto;
-    padding-left:64px;
+    padding-left: 64px;
 }
 
 
-.achievement-container{
-    width:10%;
-    height:auto;
-    float:left;
-    margin:5px;
+.achievement-container {
+    min-width: 128px;
+    width: 5%;
+    height: auto;
+    float: left;
+    margin: 5px;
 }
 
 .achievement {
+    min-width: 128px;
     width: 100%;
     height: auto;
 }
 
 .achievement.locked {
-    filter: brightness(20%);
+    filter: brightness(25%);
 }
 
 .tooltip {
     position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  }
+    font-family: 'Press Start 2P', sans-serif;
+}
 
-  .tooltip .tooltiptext {
+.tooltip:hover {
+    -webkit-animation: scale .25s ease-out;
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 200%;
+    background-color: rgba(0, 0, 0, 0.226);
     color: #fff;
     text-align: center;
     border-radius: 6px;
+    border-width: 3px;
     padding: 5px 0;
-  
+    bottom: -24px;
+    left: -50%;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+
+
+.tooltip:hover .tooltiptext {
+    transition-delay: .5s;
     visibility: visible;
-  }
+}
+
+@-webkit-keyframes scale {
+    15% {
+        -webkit-transform: scale(1.1);
+    }
+
+    20% {
+        -webkit-transform: scale(1.4);
+    }
+
+    50% {
+        -webkit-transform: scale(1.3);
+    }
+}
