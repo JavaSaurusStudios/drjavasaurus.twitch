@@ -1,0 +1,24 @@
+body{
+    background: #003b97;
+}
+
+.title{
+    width:100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.badges{
+    width: 100%;
+    margin: 0 auto;
+    padding-left:64px;
+}
+
+.achievement {
+    width: 10%;
+    height: auto;
+}
+
+.achievement.locked {
+    filter: brightness(20%);
+}
