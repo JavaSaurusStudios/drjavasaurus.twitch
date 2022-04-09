@@ -25,8 +25,6 @@ function loadProfileJson(userName) {
                 parseUserData(JSON.parse(request.responseText));
                 return request.responseText;
             }
-        }else{
-            body.innerHTML=userName+" does not have a profile at twitch.tv/drjavasaurus !"
         }
     }
 }
