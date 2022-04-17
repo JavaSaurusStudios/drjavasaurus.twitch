@@ -47,7 +47,9 @@ function loadAchievementModels(userName) {
 function loadProfileJson(userName) {
     // read text from URL location
     var request = new XMLHttpRequest();
-    request.open('GET', jsonBaseURL + userName + '.json', true);
+    //request.open('GET', jsonBaseURL + userName + '.json', true);
+    var tmpBase = "https://raw.githubusercontent.com/JavaSaurusStudios/viewers/main/profiles/";
+    request.open('GET', tmpBase + userName + '.json', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
