@@ -6,5 +6,17 @@
 	"Raid": "Lead a raid to my channel",
 	"Gamed": "Played a game with me on stream",
 	"MetIRL": "Meet me in a real life event",
-	"25KChompies":"Spend 25k on a redeem"
+	"25KChompies":"Spend 25k on a redeem",
+	"Novice Chatter":"Post 100 messages in chat",
+        "Chitty Chatty ":"Post 500 messages in chat",
+        "Talkasaur":"Post 1000 messages in chat",
+        "Keeping It Alive":"Post 2500 messages in chat",
+        "It's Over 9000":"Post 9001 messages in chat",
+        "Loquacious":"Post 25000 messages in chat",
+	"The Hourly":"Stay in a live chat for an hour",
+        "Tea Break":"Stay in a live chat for 4 hours",
+        "Viewing Machine":"Stay in a live chat for 6 hours",
+        "The good time sleep":"Stay in a live chat for 12 hours",
+        "A Full Day":"Stay in a live chat for a full day",
+        "A Full Week":"Stay in a live chat for an entire week"	
 }
