@@ -18,5 +18,11 @@
         "Viewing Machine":"Stay in a live chat for 6 hours",
         "The good time sleep":"Stay in a live chat for 12 hours",
         "A Full Day":"Stay in a live chat for a full day",
-        "A Full Week":"Stay in a live chat for an entire week"	
+        "A Full Week":"Stay in a live chat for an entire week",
+	"Trivia Time":"Earn your first trivia point",
+        "Smart Cookie":"Earn 25 trivia points",
+        "Knowledgeable":"Earn 50 trivia points",
+        "Trivia Royalty":"Earn 100  trivia points",
+        "Trivia God":"Earn 500 trivia points",
+        "Trivia Endgame":"Earn the full 1000 trivia points"
 }
