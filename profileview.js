@@ -65,7 +65,16 @@ function loadProfileJson(userName) {
 function parseUserData(data) {
     console.log(data.name);
     data.achievements.forEach(unlockAchievement);
+    var viewRef = document.getElementById("views");
+		viewRef.innerHTML=data.minutesInChat===undefined?0:convertToDays(data.minutesInChat);
+    var messageRef = document.getElementById("messages");
+		messageRef.innerHTML=data.messagesInChat===undefined?0:data.messagesInChat;
+	var triviaRef = document.getElementById("trivia");
+		triviaRef.innerHTML=data.triviaPoints===undefined?0:data.triviaPoints;
+}
 
+function convertToDays(minutesInChat){
+	return  Math.floor(minutesInChat/24/60) + " days ," +  Math.floor(minutesInChat/60%24) + ' hours and ' +  Math.floor(minutesInChat%60)+ ' minutes ';
 }
 
 function unlockAchievement(achievement) {
