@@ -1,4 +1,4 @@
-const jsonBaseURL = 'https://javasaurusstudios.github.io/viewers/profiles/';
+const jsonBaseURL = 'https://javasaurusstudios.github.io/viewers/achievements/profiles/';
 
 var body = document.getElementById("achievement-body");
 body.onload = function () { loadAchievements() };
@@ -25,7 +25,7 @@ function addAchievement(achievementName,achievementDesc) {
 function loadAchievementModels(userName) {
     // read text from URL location
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://javasaurusstudios.github.io/viewers/achievements.json', true);
+    request.open('GET', 'https://javasaurusstudios.github.io/viewers/achievements/achievements.json', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
@@ -48,7 +48,7 @@ function loadProfileJson(userName) {
     // read text from URL location
     var request = new XMLHttpRequest();
     //request.open('GET', jsonBaseURL + userName + '.json', true);
-    var tmpBase = "https://raw.githubusercontent.com/JavaSaurusStudios/viewers/main/profiles/";
+    var tmpBase = "https://raw.githubusercontent.com/JavaSaurusStudios/viewers/main/achievements/profiles/";
     request.open('GET', tmpBase + userName + '.json?v='+Math.random(), true);
     request.send(null);
     request.onreadystatechange = function () {
