@@ -1,7 +1,7 @@
 function doAuth() {
 
     var client_id = document.getElementById("clientID").value;
-    var redirect = document.getElementById("redirectURL").value;
+    var redirect = "https://javasaurusstudios.github.io/viewers/util/live-tracker/twitch-check.html";
 
     alert(client_id);
     alert(redirect);
